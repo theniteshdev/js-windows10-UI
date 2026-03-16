@@ -1,0 +1,169 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    -webkit-user-select: none;
+    /* Safari, Chrome */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    user-select: none;
+    /* Standard syntax */
+}
+
+/*style main-root*/
+#main-root {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Now style for wallpaper*/
+
+.wallpaper-files-folders-section {
+    height: 93vh;
+    overflow: hidden;
+    width: 100%;
+    background-image: url('../images/wallaper-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Now style for taskview*/
+.task-view-section {
+    flex: 1;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.logo-container {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: .5em;
+    margin-right: 1rem;
+    background-image: url('../images/icons/windows10-icon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.pinned-apps {
+    width: 85%;
+    justify-self: start;
+    display: flex;
+    gap: 8px;
+}
+
+.pined-app {
+    padding: 3px;
+    width: 3em;
+    height: 3em;
+    background-color: white;
+}
+
+.pined-app-image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.info {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-evenly;
+}
+
+.battery {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-image: url('../images/battery.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: contrast(150%);
+    cursor: pointer;
+}
+
+.speaker {
+    height: 2.7rem;
+    width: 2.7rem;
+    background-image: url('../images/speaker.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.time-date {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right-click-menu {
+    border: 1px solid black;
+    background-color: #fff;
+    width: 180px;
+    max-height: 200px;
+    margin: 18px;
+    padding: 2px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.right-click-menu>p {
+    padding: .4em;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+    font-size: 18px;
+}
+
+.right-click-menu>p:hover {
+    background-color: black;
+    color: #fff;
+}
+
+
+.user-folder {
+    max-width: 4rem;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 8px;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+}
+
+.user-folder:hover {
+    outline: 1px solid black
+}
+
+
+.user-folder>img {
+    width: 100%;
+    height: 100%;
+}
