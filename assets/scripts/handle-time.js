@@ -15,6 +15,5 @@ setInterval(() => {
     datePlaceholder.innerHTML = date.toLocaleDateString("en-IN", {
         dateStyle:"medium"
     });
-    console.log(datePlaceholder.innerHTML)
     timePlaceholder.innerHTML = date.toLocaleTimeString("en-US", timeFormat);
 }, 1000);
